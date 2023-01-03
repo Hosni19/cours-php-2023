@@ -16,4 +16,7 @@ echo $tva ;
 
 define('PI',3.14);
 define('GENERIC_MESSAGE_ERROR' , 'an error occured on line'); //contient une chaine de caractere
+$number= 12 ;
 
+
+echo GENERIC_MESSAGE_ERROR .$number ;
