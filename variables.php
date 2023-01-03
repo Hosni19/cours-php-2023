@@ -135,6 +135,16 @@ $autreCompteur-- ;
 
 // ces 3 lignes font la meme chose 
 
-$a = $a + 1 ; 
-$a+=1 ;
-$a++ ;
+
+
+
+//--------------------------------------------
+
+//3eme type de variable : les nombres decimaux 
+
+$nombreDecimal = 23.34;
+// il faut utiliser le point et non la virgule 
+//on peut utiliser tous les operateurs de calculs sur les nombres decimaux
+
+$nombreDecimal++;
+echo $nombreDecimal ;
