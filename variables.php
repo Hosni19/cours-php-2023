@@ -51,8 +51,11 @@ $autrephrase.=$piece ;
 
 echo $sauteDeLigne;
 echo $autrephrase;
-
-
+// utilisation des double quote 
+echo $sauteDeLigne;
+$lieu = 'Jardin';
+$phrase = "je suis dans le $lieu"; //le variable est executé .
+echo $phrase;
 //-------------------------------------------------
 
 //deuxieme type de variables : les nombres ENTIERS
