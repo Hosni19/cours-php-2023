@@ -21,5 +21,6 @@ echo 'TEST' ;
 ?>
 
 <h1>Test</h1>
+
 <!-- là je vais envoyer ce code directement au client -->
 <!-- Ce code n'est pas executé -->
