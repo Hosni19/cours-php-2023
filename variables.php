@@ -151,3 +151,13 @@ $nombreDecimal = 23.34;
 
 $nombreDecimal++;
 echo $nombreDecimal ;
+
+// en PHP on peut tout concaténer 
+echo $sauteDeLigne;
+$nombre = 25 ; 
+
+$phrase= 'lecole a actuellement ' .$nombre ." D'etudiants";
+
+echo $phrase ;
+
+//point d'attention , car PHP fait souvent des choses tout seul , ce qui peut entrainer des effets de bord et donc des bugs .
