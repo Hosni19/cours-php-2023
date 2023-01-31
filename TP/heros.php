@@ -5,6 +5,7 @@ $nomDuHeros = 'Hosni'; // A choisir
 $distanceParcourue = 0;
 // 1. Racontez comment s'appelle le héros, en complétant la variable $histoire, utilisez un peu d'html : hX, p, b, etc.
 // On va définir quelques valeurs aléatoirement
+
 $force = rand(1, 10);
 $agilite = rand(1, 10);
 $piecesDOr = rand(1, 100);
@@ -27,6 +28,7 @@ echo '<b  style="color:Gold; font-family: Helvetica, Arial, sans-serif;"> Piece 
 //
 // 2.
 // Si la force est supérieure à 8, alors je gagne 1 point d'agilité.
+
 echo '<br>';
 if ($force > 8) {
     $agilite++;
@@ -37,6 +39,7 @@ echo ' <b style="color:red; font-family: Helvetica, Arial, sans-serif;"> Agilit�
 
 // 3.// Si ma force est inférieure à 6, je passe par le chemin de gauche, qui fait 500m, sinon je passe par le chemin de droite, qui fait 850m.
 // Dans le chemin de droite, je trouve 4 pièces d'or
+
 echo '<br>';
 if ($force < 6) {
     $distanceParcourue += 500;
@@ -55,6 +58,7 @@ if ($force < 6) {
 // Si j'ai plus de 80 pièces d'or, j'en dépense 30 pour m'offrir 2 points d'agilité
 // Si j'en ai moins de 80 et + de 60, j' en dépense 15 pour m'offrir 1 point d'agilité
 // Si j'en ai moins de 60, j'en dépense 5 pour m'offrir 1 point de force
+
 $histoire .= '<p></p> j\'ai ' . $piecesDOr . ' piece </p> ';
 
 $distanceParcourue += 150;
@@ -137,6 +141,7 @@ switch ($joursDeLaSemaine[$NbJourDeLaSemaine - 1]) {
 
 // 8. A l'aide d'un "if elseif elseif..." déterminer la tranche de 20, dans laquelle se trouve le nombre de pièces d'or (0-20; 21-40; 41-60; jusque 100)
 // Gérez le cas où il y aurait plus de 100 pièces également
+
 switch(true){
     case $piecesDOr <= 20 : 
         $histoire .= '<br>TRANCHE (0-20)';

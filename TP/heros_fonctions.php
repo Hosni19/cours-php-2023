@@ -18,7 +18,7 @@ function comparer(array $ennemis, int $agilite, int $pointDeVie, int $force, int
         if ($maPuissance > $ennemi['puissance']) {
             $force++;
             //je gagne
-            echo '<br> j\'ai battu l\'ork ' . 'et ma puissance est : ' . $maPuissance . 'Puissance Enemi : ' . $ennemi['puissance'] . ' <br>';
+            echo '<br> j\'ai battu l\'ork ' . '<br>' .'et ma puissance est : ' . $maPuissance  . '<br>' .'Puissance Enemi : ' . $ennemi['puissance'] . ' <br>';
         } else {
             $agilite--;
             $pointDeVie -= 10;
@@ -29,19 +29,16 @@ function comparer(array $ennemis, int $agilite, int $pointDeVie, int $force, int
 
 //2
 
-function creerUnEnnemi(int $niveau  ): array
-//puissance
+function creerUnEnnemi(int $niveau) : array
 {
-$puisance = rand(10 * $niveau , 20* $niveau);
-}
-//nom    
-$array = str_shuffle($ennemis);
-$nom = substr($array,0,3);
+    $alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $alphabet = str_shuffle($alphabet);
+    $nom = substr($alphabet, 0, 6);
+    $puissance = rand(10 *$niveau, 20 *$niveau);
 
 
-    return [
-    'nom' =>'Ork' .$nom,  
-    'puissance' => $puisance ]; 
-    
-    
+    return[
+        'nom' => 'Ork' .'' .$nom,
+        'puissance' => $puissance
+    ];
 }
